@@ -56,7 +56,7 @@ def update(frame):
     wind_speed_data.append(wind_speed)
 
     # Keep last 20 records
-    if len(time_data) > 20:
+    if len(time_data) > 30:
         time_data.pop(0)
         temp_data.pop(0)
         humidity_data.pop(0)
