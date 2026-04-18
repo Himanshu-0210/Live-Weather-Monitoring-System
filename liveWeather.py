@@ -7,7 +7,7 @@ from key import API_KEY
 import os
 import csv
 
-sns.set(style="darkgrid")
+sns.set_theme(style="darkgrid")
 
 
 CITY = "Gwalior"
@@ -78,6 +78,7 @@ def update(frame):
     ax.set_ylabel("Value")
     plt.xticks(rotation=45)
     plt.tight_layout()
+    plt.grid(True)
     ax.legend()
     
 
